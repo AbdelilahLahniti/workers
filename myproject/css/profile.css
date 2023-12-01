@@ -1,0 +1,161 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+body {
+    background-color: #eeeeee;
+    animation: body 1s ease;
+}
+
+::-webkit-scrollbar {
+    background-color: #eeeeee;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 5px;
+
+}
+@keyframes body{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*---------------------- start profile------------------------ */
+.top-profile {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all .5s ease;
+    border-bottom: #00000012 1px solid;
+}
+
+.cover:hover .edit {
+    opacity: 1;
+    color: white;
+}
+
+.cover .edit {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.editProfile{
+    height: fit-content !important;
+
+}
+
+.profileImage {
+    z-index: 2;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.profileImage .edit {
+    text-decoration: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+
+.profileImage:hover .edit {
+    opacity: 1;
+}
+
+.personImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.personName {
+    max-width: 300px;
+    background-color: #15395A;
+    color: white;
+    padding: 20px 10px 10px 10px;
+    border-radius: 3px;
+}
+
+.text-secondary {
+    color: #15395A !important;
+}
+
+@media (max-width:400px) {
+    .profile .personImage {
+        margin-left: 5%;
+    }
+
+    .profile ul {
+        margin: 0 auto;
+    }
+}
+
+.blockDescription{
+    max-width: 1150px;
+    
+}
+.blockDescription .description {
+    width:  100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0px 0px 2px #3333332d;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+
+
+/*---------------------- end profile------------------------ */

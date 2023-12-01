@@ -1,0 +1,98 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border:1px solid red; */
+}
+body{
+  background-color: #eeeeee;
+}
+
+::-webkit-scrollbar{
+  background-color: #eeeeee;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:red;
+  border-radius: 5px;
+  
+}
+/*---------------------- start froms------------------------ */
+
+
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 100px auto;
+  }
+  
+  .feed-form input {
+    height: 54px;
+    width: 290px;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 15px;
+    border: none;
+    margin-left: 10px;
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4B4B4B;
+  }
+  .addimg{
+    max-width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    
+    cursor: pointer !important;
+    margin: 20px auto !important;
+  }
+  
+  .emailError{
+    margin-left: 10px;
+  }
+  
+  .button_submit:hover, .feed-form input:hover {
+    transform: scale(1.009);
+    box-shadow: 0px 0px 3px 0px #212529;
+  }
+  
+  .button_submit {
+    width: 50%;
+    height: 54px;
+    margin: 0px auto;
+    font-size: 14px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*----------------------------start login------------------------- */
+  .loginForm{
+    width: 300px;
+
+  }
+
+  .loginForm input{
+    margin-left: 0px;
+    width:100%;
+    
+
+  }
+
+  .loginForm .button_submit {
+    width:100%;
+  }
+
+  /*----------------------------end login------------------------- */
+/*---------------------- end forms------------------------ */

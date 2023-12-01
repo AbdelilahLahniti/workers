@@ -1,0 +1,53 @@
+
+header .socialMedia a {
+    text-decoration: none;
+    color: black;
+}
+
+header .socialMedia a:hover {
+    color: rgb(83, 83, 83);
+}
+
+header .item{
+    position: relative;
+    padding: 5px !important;
+    
+}
+
+header .item::after {
+    all:unset;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    transition:width .3s;
+}
+
+header .item:hover::after {
+    width:calc(100% - 10px);
+    
+}
+header .nav-item:nth-child(4) .item{
+    border: solid 2px black;
+    border-radius: 5px;
+    transition: .5s;
+}
+header .nav-item:nth-child(4) .item:hover::after{
+    display: none;
+}
+header .nav-item:nth-child(4) .item:hover{
+    border-color:red;
+    transform: scale(1.1);
+}
+@media(max-width:995px){
+   header .nav-item{
+    width: fit-content;
+   }
+
+}
+/* ----------------------end header-------------------- */
